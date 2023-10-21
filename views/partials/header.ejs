@@ -1,12 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
 <div class="line-numbers"></div>
 
 <header>
     <a href="/" class="logo">// cubio_studios <div id="web_logo"><br>web_dev</div></a>
     <ul>
-        
-        <a class="active" href="index.html"><li>_home</li></a>
-        <a href="about.html"><li>_about</li></a>
-        <a href="projects.html"><li>_projects</li></a>
-        <a href="contact.html"><li>_contact</li></a>
-    </ul>
+        <li><a href="/" class="<%= active === '/' ? 'active' : '' %>">_home</a></li>
+        <li><a href="/about" class="<%= active === '/about' ? 'active' : '' %>">_about</a></li>
+        <li><a href="/projects" class="<%= active === '/projects' ? 'active' : '' %>">_projects</a></li>
+        <li><a href="/contact" class="<%= active === '/contact' ? 'active' : '' %>">_contact</a></li>
+    </ul>    
 </header>
