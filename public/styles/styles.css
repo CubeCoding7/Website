@@ -10,7 +10,7 @@
 /* Reset some default styles */
 body,
 ul {
-    font-family: VT323;
+    font-family: VT323, 'Lucida Grande';
     margin: 0;
     padding: 0;
     background-color: #212121;
