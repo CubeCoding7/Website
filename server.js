@@ -10,19 +10,19 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', {title: "Home - CubeCoding"});
 });
 
 app.get('/about', (req, res) => {
-    res.render('about');
+    res.render('about', {title: "About - CubeCoding"});
 });
 
 app.get('/projects', (req, res) => {
-    res.render('projects');
+    res.render('projects', {title: "Projects - CubeCoding"});
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact');
+    res.render('contact', {title: "Contact - CubeCoding"});
 });
 
 app.listen(3000)
